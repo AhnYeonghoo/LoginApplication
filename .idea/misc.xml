@@ -6,9 +6,9 @@
         <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/drawable/background_radius.xml" value="0.1" />
         <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/drawable/background_radius_yellow.xml" value="0.1" />
         <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/layout/activity_intro.xml" value="0.1" />
-        <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/layout/activity_join.xml" value="0.1111111111111111" />
+        <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/layout/activity_join.xml" value="0.176" />
         <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/layout/activity_login.xml" value="0.176" />
-        <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/layout/activity_main.xml" value="0.128" />
         <entry key="..\:/Users/dksdu/AndroidStudioProjects/MySoloLife/app/src/main/res/layout/activity_splash.xml" value="0.264" />
       </map>
     </option>
@@ -22,7 +22,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.176" />
+        <option name="scale" value="0.128" />
       </ProjectState>
     </option>
   </component>

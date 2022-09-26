@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".auth.LoginActivity">
+        tools:context=".auth.LoginActivity"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/mainColor">
+            android:background="@color/mainColor"
+            android:layout_height="150dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center"
                 android:text="로그인"
+                android:gravity="center"
+                android:textStyle="bold"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
 
         </LinearLayout>
 
@@ -33,44 +35,47 @@
 
             <EditText
                 android:id="@+id/emailArea"
-                style="@style/AuthEditText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="email" />
+                android:hint="email"
+                style="@style/AuthEditText"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0.5dp"
+                android:background="#999999"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="#999999" />
+                android:layout_height="0.5dp"/>
 
 
             <EditText
                 android:id="@+id/passwordArea"
-                style="@style/AuthEditText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:inputType="textPassword"
                 android:hint="password"
-                android:inputType="textPassword" />
+                style="@style/AuthEditText"
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0.5dp"
+                android:background="#999999"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="#999999" />
+                android:layout_height="0.5dp"/>
 
             <Button
                 android:id="@+id/loginBtn"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/background_radius_yellow"
-                android:text="Login" />
+                android:text="로그인하기"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
 
 
         </LinearLayout>
 
     </LinearLayout>
+
 </layout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mysololife">
 
     <application
@@ -9,24 +10,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MySoloLife">
-        <activity
-            android:name=".auth.LoginActivity"
-            android:exported="true"
-            android:label="@string/title_activity_login"
-            android:theme="@style/Theme.MySoloLife.NoActionBar" />
-        <activity
-            android:name=".auth.JoinActivity"
-            android:exported="true" />
-        <activity
-            android:name=".auth.IntroActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SplashActivity"
+        android:theme="@style/Theme.MySoloLife"
+        tools:targetApi="m">
+        <activity android:name=".auth.JoinActivity" ></activity>
+        <activity android:name=".auth.LoginActivity" />
+        <activity android:name=".auth.IntroActivity" />
+        <activity android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
