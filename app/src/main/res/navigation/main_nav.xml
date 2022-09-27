@@ -9,7 +9,20 @@
         android:id="@+id/homeFragment"
         android:name="com.example.mysololife.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tipFragment"
+            app:destination="@id/tipFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_talkFragment"
+            app:destination="@id/talkFragment" />
+    </fragment>
     <fragment
         android:id="@+id/bookmarkFragment"
         android:name="com.example.mysololife.fragments.BookmarkFragment"
