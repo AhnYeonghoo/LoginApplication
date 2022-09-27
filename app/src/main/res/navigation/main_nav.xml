@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mysololife.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.example.mysololife.fragments.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
+    <fragment
+        android:id="@+id/talkFragment"
+        android:name="com.example.mysololife.fragments.TalkFragment"
+        android:label="fragment_talk"
+        tools:layout="@layout/fragment_talk" />
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.example.mysololife.fragments.StoreFragment"
+        android:label="fragment_store"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/tipFragment"
+        android:name="com.example.mysololife.fragments.TipFragment"
+        android:label="fragment_tip"
+        tools:layout="@layout/fragment_tip" />
+</navigation>

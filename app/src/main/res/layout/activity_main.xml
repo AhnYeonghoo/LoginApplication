@@ -50,6 +50,15 @@
         android:layout_marginTop="60dp"
         />
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/main_nav"
+        android:layout_marginTop="60dp" />
+
     <!--    <Button-->
     <!--        android:id="@+id/logoutBtn"-->
     <!--        android:layout_width="wrap_content"-->
