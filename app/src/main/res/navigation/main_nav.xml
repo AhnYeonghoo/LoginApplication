@@ -27,20 +27,72 @@
         android:id="@+id/bookmarkFragment"
         android:name="com.example.mysololife.fragments.BookmarkFragment"
         android:label="fragment_bookmark"
-        tools:layout="@layout/fragment_bookmark" />
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
+        <action
+            android:id="@+id/action_bookmarkFragment_to_talkFragment2"
+            app:destination="@id/talkFragment" />
+        <action
+            android:id="@+id/action_bookmarkFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_bookmarkFragment_to_tipFragment2"
+            app:destination="@id/tipFragment" />
+    </fragment>
     <fragment
         android:id="@+id/talkFragment"
         android:name="com.example.mysololife.fragments.TalkFragment"
         android:label="fragment_talk"
-        tools:layout="@layout/fragment_talk" />
+        tools:layout="@layout/fragment_talk" >
+        <action
+            android:id="@+id/action_talkFragment_to_tipFragment2"
+            app:destination="@id/tipFragment" />
+        <action
+            android:id="@+id/action_talkFragment_to_storeFragment2"
+            app:destination="@id/storeFragment" />
+        <action
+            android:id="@+id/action_talkFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_talkFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+    </fragment>
     <fragment
         android:id="@+id/storeFragment"
         android:name="com.example.mysololife.fragments.StoreFragment"
         android:label="fragment_store"
-        tools:layout="@layout/fragment_store" />
+        tools:layout="@layout/fragment_store" >
+        <action
+            android:id="@+id/action_storeFragment_to_tipFragment"
+            app:destination="@id/tipFragment" />
+        <action
+            android:id="@+id/action_storeFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_storeFragment_to_talkFragment"
+            app:destination="@id/talkFragment" />
+        <action
+            android:id="@+id/action_storeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tipFragment"
         android:name="com.example.mysololife.fragments.TipFragment"
         android:label="fragment_tip"
-        tools:layout="@layout/fragment_tip" />
+        tools:layout="@layout/fragment_tip" >
+        <action
+            android:id="@+id/action_tipFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
+        <action
+            android:id="@+id/action_tipFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_tipFragment_to_talkFragment"
+            app:destination="@id/talkFragment" />
+        <action
+            android:id="@+id/action_tipFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
