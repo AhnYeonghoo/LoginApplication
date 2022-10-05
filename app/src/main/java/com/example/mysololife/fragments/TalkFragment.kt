@@ -16,13 +16,16 @@ class TalkFragment : Fragment() {
     private lateinit var binding: FragmentTalkBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
 
         }
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_talk, container, false)
@@ -32,16 +35,14 @@ class TalkFragment : Fragment() {
 
         binding.homeTap.setOnClickListener {
             it.findNavController().navigate(R.id.action_talkFragment_to_homeFragment)
-
         }
 
         binding.tipTap.setOnClickListener {
             it.findNavController().navigate(R.id.action_talkFragment_to_tipFragment2)
-
         }
+
         binding.storeTap.setOnClickListener {
             it.findNavController().navigate(R.id.action_talkFragment_to_storeFragment2)
-
         }
         return binding.root
     }
